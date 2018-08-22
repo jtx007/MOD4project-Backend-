@@ -11,10 +11,13 @@ module Api
         end
 
         def create
-          
+
           @term = Term.new(term_params)
+
+          @user = User.find_or_create_by(username: params[:user])
+
           if @term.save
-            @playlist = Playlist.create_playlist(@term.word)
+            @playlist = Playlist.create_playlist(@term.word, @user.id)
 
             render json: @playlist, status: :created
           else

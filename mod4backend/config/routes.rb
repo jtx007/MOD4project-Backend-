@@ -6,7 +6,8 @@ Rails.application.routes.draw do
       resources :playlists, except: [:new, :edit]
       resources :songs, except: [:new, :edit]
       resources :users
-      resources :terms 
+      resources :terms
+      resources :moods
     end
   end
 end
