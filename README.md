@@ -1,2 +1,2 @@
 # MOD4project-Backend-
-Rails Backend for MOD 4 project
+This is the rails backend for MoodyMusic, the frontend is located int MoodyMusicFrontend Repo (https://github.com/jtx007/MoodyMusicFrontend)
